@@ -5,7 +5,6 @@ type NavItem = {
   id: string;
   name: string;
   path: string;
-  newTab?: boolean;
 };
 
 const navList: NavItem[] = [
