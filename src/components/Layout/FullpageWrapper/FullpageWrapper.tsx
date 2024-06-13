@@ -1,15 +1,27 @@
-// src/components/FullpageWrapper.tsx
 import { Section } from "@components/Section";
 import ReactFullpage from "@fullpage/react-fullpage";
 import React from "react";
 
-export const FullpageWrapper: React.FC = () => {
+export type FullpageWrapperProps = {
+  setPageActive: (page: string) => void;
+};
+
+export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
+  props: FullpageWrapperProps
+) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
+  const onLeave = (_origin: any, destination: any, _direction: any): void => {
+    const pageIds: string[] = ["home", "about", "skills", "gallery", "contact"];
+    props.setPageActive(pageIds[destination.index]);
+  };
+
   return (
     <ReactFullpage
       anchors={["home", "about", "skills", "gallery", "contact"]}
       menu="#menu"
       controlArrows={false}
       sectionsColor={["#ff9999", "#99ccff", "#99ff99", "#ffff99"]}
+      onLeave={onLeave}
       credits={{ enabled: false }}
       render={({ fullpageApi }) => {
         return (
