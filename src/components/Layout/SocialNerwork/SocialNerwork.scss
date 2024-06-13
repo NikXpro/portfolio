@@ -1,0 +1,14 @@
+.pagination {
+  pointer-events: all;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+  }
+}
