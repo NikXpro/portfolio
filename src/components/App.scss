@@ -1,0 +1,52 @@
+// src/styles.scss
+
+body {
+  font-family: "Trip Sans";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+#root {
+  width: 100%;
+}
+
+#fullpage {
+  .section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fp-slides {
+      width: 100%;
+    }
+  }
+}
+
+.layout {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  align-items: start;
+  //background-color: #333;
+  z-index: 1000;
+  pointer-events: none;
+
+  display: flex;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Masquer les flèches dans la section Gallery */
+.fp-controlArrow {
+  display: none !important;
+}

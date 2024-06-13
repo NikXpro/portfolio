@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+
+  padding: 2.5rem 2.375rem;
+  width: 100%;
+
+  .icon.logo {
+    fill: white;
+    width: 3.8125rem;
+    height: 3.8125rem;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4.375rem;
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      .nav-item {
+        pointer-events: all;
+
+        color: white;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &.active {
+          text-decoration: underline;
+        }
+
+        &:hover {
+          filter: opacity(0.8);
+        }
+      }
+    }
+  }
+
+  .download {
+    pointer-events: all;
+
+    .icon.download {
+      fill: white;
+      width: 2.75rem;
+      height: 2.75rem;
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
