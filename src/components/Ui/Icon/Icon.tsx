@@ -29,7 +29,7 @@ type IconProps = {
 
 export function Icon({ id, style }: IconProps) {
   return createElement(icons[id as keyof typeof icons] || "svg", {
-    className: "icon",
+    className: `icon ${id}`,
     style: style,
   });
 }
