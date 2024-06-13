@@ -16,7 +16,7 @@ const navList: NavItem[] = [
 
 export const SocialNerwork = () => {
   return (
-    <div className="pagination">
+    <div className="socialnetwork">
       {navList.map((navItem) => (
         <a
           key={navItem.id}
