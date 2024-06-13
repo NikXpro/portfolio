@@ -1,16 +1,14 @@
 header {
   display: flex;
+  padding: 2.5rem 2.375rem;
   justify-content: space-between;
   align-items: center;
-  align-self: flex-start;
-
-  padding: 2.5rem 2.375rem;
-  width: 100%;
+  align-self: stretch;
 
   .icon.logo {
     fill: white;
     width: 3.8125rem;
-    height: 3.8125rem;
+    height: auto;
   }
 
   .menu {
