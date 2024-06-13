@@ -1,5 +1,5 @@
 // src/App.tsx
-import { FullpageWrapper, Header } from "@components/Layout";
+import { FullpageWrapper, Header, Pagination } from "@components/Layout";
 import React, { useState } from "react";
 import "./App.scss";
 
@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <div className="layout">
         <Header pageActive={pageActive} />
         <div className="center">
-          <div className="pagination"></div>
+          <Pagination pageActive={pageActive} />
           <div className="socialnetwork"></div>
         </div>
       </div>
