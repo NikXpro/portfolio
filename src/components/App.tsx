@@ -5,6 +5,7 @@ import {
   Pagination,
   SocialNerwork,
 } from "@components/Layout";
+import { PageCounter } from "@components/Layout/PageCounter/PageCounter";
 import React, { useState } from "react";
 import "./App.scss";
 
@@ -18,6 +19,9 @@ const App: React.FC = () => {
         <div className="center">
           <Pagination pageActive={pageActive} />
           <SocialNerwork />
+        </div>
+        <div className="bottom">
+          <PageCounter selectedId={pageActive} />
         </div>
       </div>
       <FullpageWrapper setPageActive={setPageActive} />
