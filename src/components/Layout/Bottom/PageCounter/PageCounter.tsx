@@ -7,7 +7,7 @@ export type PageCounterProps = {
 
 export const PageCounter = (props: PageCounterProps) => {
   return (
-    <div className="counter">
+    <div className="page-counter">
       <div className="number">
         <div className="zero">0</div>
         <Counter selectedId={props.selectedId} />

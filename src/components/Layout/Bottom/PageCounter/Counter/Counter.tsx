@@ -1,4 +1,4 @@
-import "./Counter.css";
+import "./Counter.scss";
 
 export const Counter = ({ selectedId }: { selectedId: string }) => {
   const numberList = [
