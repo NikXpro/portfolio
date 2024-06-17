@@ -1,10 +1,11 @@
 import {
   FullpageWrapper,
   Header,
+  PageCounter,
   Pagination,
+  ScrollIdicator,
   SocialNerwork,
 } from "@components/Layout";
-import { PageCounter } from "@components/Layout/Bottom/PageCounter/PageCounter";
 import React, { useState } from "react";
 import "./App.scss";
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         </div>
         <div className="bottom">
           <PageCounter selectedId={pageActive} />
+          <ScrollIdicator />
         </div>
       </div>
       <FullpageWrapper setPageActive={setPageActive} />
