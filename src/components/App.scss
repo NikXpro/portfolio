@@ -9,6 +9,10 @@ body {
 
 #root {
   width: 100%;
+
+  .fp-watermark {
+    display: none;
+  }
 }
 
 #fullpage {
