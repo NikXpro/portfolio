@@ -1,0 +1,33 @@
+.scroll-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: fit-content;
+  height: fit-content;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scroll-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Trip Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.icon.arrowDown {
+  width: 2.575rem;
+  height: auto;
+  fill: #fff;
+  box-sizing: border-box;
+}

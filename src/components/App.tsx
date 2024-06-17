@@ -3,7 +3,7 @@ import {
   Header,
   PageCounter,
   Pagination,
-  ScrollIdicator,
+  ScrollIndicator,
   SocialNerwork,
 } from "@components/Layout";
 import React, { useState } from "react";
@@ -22,7 +22,7 @@ const App: React.FC = () => {
         </div>
         <div className="bottom">
           <PageCounter selectedId={pageActive} />
-          <ScrollIdicator />
+          <ScrollIndicator />
         </div>
       </div>
       <FullpageWrapper setPageActive={setPageActive} />
