@@ -4,7 +4,7 @@ import {
   Pagination,
   SocialNerwork,
 } from "@components/Layout";
-import { PageCounter } from "@components/Layout/PageCounter/PageCounter";
+import { PageCounter } from "@components/Layout/Bottom/PageCounter/PageCounter";
 import React, { useState } from "react";
 import "./App.scss";
 

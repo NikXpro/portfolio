@@ -1,4 +1,4 @@
-import { Counter } from "@components/Layout/PageCounter/Counter";
+import { Counter } from "@components/Layout/Bottom/PageCounter/Counter";
 import "./PageCounter.scss";
 
 export type PageCounterProps = {
