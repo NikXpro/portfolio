@@ -20,43 +20,46 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
       anchors={["home", "about", "skills", "gallery", "contact"]}
       menu="#menu"
       controlArrows={false}
-      sectionsColor={["#ff9999", "#99ccff", "#99ff99", "#ffff99"]}
       onLeave={onLeave}
       credits={{ enabled: false }}
       render={({ fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
             <div className="section">
-              <Section style={{ backgroundColor: "#ff9999" }}>
+              <Section style={{}}>
                 <h1>Home</h1>
               </Section>
             </div>
             <div className="section">
-              <Section style={{ backgroundColor: "#99ccff" }}>
+              <Section style={{}}>
                 <h1>About</h1>
               </Section>
             </div>
             <div className="section">
-              <Section style={{ backgroundColor: "#99ff99" }}>
+              <Section style={{}}>
                 <h1>Skills</h1>
               </Section>
             </div>
             <div className="section">
-              <div className="slide" style={{ backgroundColor: "#ffcc99" }}>
-                <h1>Gallery</h1>
-                <button onClick={() => fullpageApi.moveSlideRight()}>
-                  Go to Slide 2
-                </button>
+              <div className="slide">
+                <Section style={{ flexDirection: "column" }}>
+                  <h1>Gallery</h1>
+                  <button onClick={() => fullpageApi.moveSlideRight()}>
+                    Go to Slide 2
+                  </button>{" "}
+                </Section>
               </div>
-              <div className="slide" style={{ backgroundColor: "#cc99ff" }}>
-                <h1>Gallery Sub</h1>
-                <button onClick={() => fullpageApi.moveSlideLeft()}>
-                  Go to Slide 1
-                </button>
+              <div className="slide">
+                <Section style={{ flexDirection: "column" }}>
+                  <h1>Gallery Sub</h1>
+                  <button onClick={() => fullpageApi.moveSlideLeft()}>
+                    Go to Slide 1
+                  </button>{" "}
+                </Section>
               </div>
             </div>
             <div className="section">
-              <Section style={{ backgroundColor: "#ffff99", width: "100vw" }}>
+              <Section style={{ width: "100vw" }}>
                 <h1>Contact</h1>
               </Section>
             </div>
