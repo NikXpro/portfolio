@@ -1,11 +1,4 @@
-import {
-  FullpageWrapper,
-  Header,
-  PageCounter,
-  Pagination,
-  ScrollIndicator,
-  SocialNerwork,
-} from "@components/Layout";
+import { FullpageWrapper, Layout } from "@components/Layout";
 import React, { useState } from "react";
 import "./App.scss";
 
@@ -14,17 +7,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <div className="layout">
-        <Header pageActive={pageActive} />
-        <div className="center">
-          <Pagination pageActive={pageActive} />
-          <SocialNerwork />
-        </div>
-        <div className="bottom">
-          <PageCounter selectedId={pageActive} />
-          <ScrollIndicator />
-        </div>
-      </div>
+      <Layout pageActive={pageActive} />
       <FullpageWrapper setPageActive={setPageActive} />
     </>
   );
