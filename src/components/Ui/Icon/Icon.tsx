@@ -1,6 +1,7 @@
 import { createElement } from "react";
 
 import arrowDown from "@assets/icons/arrowDown.svg?react";
+import arrowForward from "@assets/icons/arrowForward.svg?react";
 import dot from "@assets/icons/dot.svg?react";
 import dotFull from "@assets/icons/dotFull.svg?react";
 import download from "@assets/icons/download.svg?react";
@@ -20,6 +21,7 @@ const icons = {
   logo,
   twitter,
   youtube,
+  arrowForward,
 };
 
 type IconProps = {
