@@ -106,7 +106,7 @@ export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
   return (
     <div
       className="gallery-project"
-      style={{ width: showArrows ? "75vw" : "65vw" }}
+      style={{ width: showArrows ? "70vw" : "60vw" }}
     >
       {showArrows && (
         <div className="left" onClick={handlePrev}>
