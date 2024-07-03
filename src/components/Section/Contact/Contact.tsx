@@ -68,7 +68,7 @@ export const Contact = () => {
             name="fullName"
             error={fullNameError}
             onChange={handleFullNameChange}
-            placeholder="Please enter your full name"
+            placeholder="Full name"
           />
           <Input
             type="email"
@@ -77,7 +77,7 @@ export const Contact = () => {
             name="email"
             error={emailError}
             onChange={handleEmailChange}
-            placeholder="Please enter your email"
+            placeholder="Email"
           />
           <Input
             type="text"
@@ -86,7 +86,7 @@ export const Contact = () => {
             name="message"
             error={messageError}
             onChange={handleMessageChange}
-            placeholder="Please enter your message"
+            placeholder="Message"
           />
           <button type="submit">Submit</button>
         </form>
