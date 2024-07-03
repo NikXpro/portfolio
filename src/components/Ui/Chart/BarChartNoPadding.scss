@@ -1,0 +1,13 @@
+.barchart-container {
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-title {
+  text-align: start;
+  margin-bottom: 0;
+  margin-left: 5rem;
+}
