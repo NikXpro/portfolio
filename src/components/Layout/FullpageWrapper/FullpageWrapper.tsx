@@ -1,4 +1,5 @@
 import { Gallery, Section } from "@components/Section";
+import { GalleryProject } from "@components/Section/Gallery/GalleryProject";
 import ReactFullpage from "@fullpage/react-fullpage";
 import React from "react";
 
@@ -53,9 +54,9 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
               </div>
               <div className="slide">
                 <Section style={{ flexDirection: "column" }}>
-                  <h1>Gallery Sub</h1>
+                  <h1>Gallery Sub 2</h1>
                   <button onClick={() => fullpageApi.moveSlideLeft()}>
-                    Go to Slide 1
+                    Go to Slide 2
                   </button>{" "}
                 </Section>
               </div>
