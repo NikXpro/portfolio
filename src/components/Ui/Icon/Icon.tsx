@@ -6,6 +6,7 @@ import dot from "@assets/icons/dot.svg?react";
 import dotFull from "@assets/icons/dotFull.svg?react";
 import download from "@assets/icons/download.svg?react";
 import github from "@assets/icons/github.svg?react";
+import arduino from "@assets/icons/language-tools/arduino.svg?react";
 import css from "@assets/icons/language-tools/css.svg?react";
 import express from "@assets/icons/language-tools/express.svg?react";
 import figma from "@assets/icons/language-tools/figma.svg?react";
@@ -13,6 +14,7 @@ import git from "@assets/icons/language-tools/git.svg?react";
 import html from "@assets/icons/language-tools/html.svg?react";
 import javascript from "@assets/icons/language-tools/javascript.svg?react";
 import json from "@assets/icons/language-tools/json.svg?react";
+import linux from "@assets/icons/language-tools/linux.svg?react";
 import lua from "@assets/icons/language-tools/lua.svg?react";
 import nodejs from "@assets/icons/language-tools/nodejs.svg?react";
 import postman from "@assets/icons/language-tools/postman.svg?react";
@@ -50,6 +52,8 @@ const icons = {
   git,
   html,
   postman,
+  arduino,
+  linux,
 };
 
 type IconProps = {
