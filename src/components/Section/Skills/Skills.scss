@@ -1,0 +1,46 @@
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: 40%;
+  &__content {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5rem;
+    justify-content: space-between;
+    height: 100%;
+
+    &__language-tools {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 2rem;
+
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: auto;
+        &__item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          background-color: rgb(39, 39, 39);
+          border-radius: 10px;
+        }
+      }
+    }
+    &__chart {
+      max-width: 60rem;
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
