@@ -1,3 +1,4 @@
+import { useGallery } from "@components/Section/Gallery/useGallery";
 import { Card } from "@components/Ui/Card/Card";
 import "./Gallery.scss";
 
@@ -7,8 +8,10 @@ export type GalleryProps = {
 };
 
 export const Gallery = ({ fullpageApi }: GalleryProps) => {
+  const { setSelectedId } = useGallery();
 
   const handleClick = (id: string) => {
+    setSelectedId(id);
     fullpageApi.moveSlideRight();
   };
 

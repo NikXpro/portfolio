@@ -1,4 +1,5 @@
 import { FullpageWrapper, Layout } from "@components/Layout";
+import { GalleryProvider } from "@components/Section/Gallery/GalleryContext";
 import React, { useState } from "react";
 import "./App.scss";
 
@@ -7,8 +8,10 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Layout pageActive={pageActive} />
-      <FullpageWrapper setPageActive={setPageActive} />
+      <GalleryProvider>
+        <Layout pageActive={pageActive} />
+        <FullpageWrapper setPageActive={setPageActive} />
+      </GalleryProvider>
     </>
   );
 };

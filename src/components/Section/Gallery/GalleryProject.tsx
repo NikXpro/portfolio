@@ -1,3 +1,4 @@
+import { useGallery } from "@components/Section/Gallery/useGallery";
 import { Icon } from "@components/Ui";
 import { Card } from "@components/Ui/Card/Card";
 import { useEffect, useState } from "react";
@@ -10,6 +11,13 @@ export type GalleryProjectProps = {
 export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
   const [currentIndex, setCurrentIndex] = useState(0); // État pour l'index actuel
 
+  const { selectedId } = useGallery();
+
+  useEffect(() => {
+    // Logique pour afficher les informations basées sur selectedId
+    console.log(`Afficher les informations pour ${selectedId}`);
+    setCurrentIndex(0);
+  }, [selectedId]);
 
   const cards = {
     card1: [
