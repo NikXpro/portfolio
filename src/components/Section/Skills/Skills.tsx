@@ -11,15 +11,17 @@ const languageTools = [
   { id: "python", name: "Python" },
   { id: "javascript", name: "JavaScript" },
   { id: "typescript", name: "TypeScript" },
-  { id: "figma", name: "Figma" },
-  { id: "git", name: "Git" },
   { id: "html", name: "HTML" },
   { id: "css", name: "CSS" },
+  { id: "sass", name: "Sass" },
+  { id: "figma", name: "Figma" },
   { id: "postman", name: "Postman" },
+  { id: "git", name: "Git" },
   { id: "react", name: "React" },
   { id: "nodejs", name: "Node.js" },
-  { id: "sass", name: "Sass" },
   { id: "json", name: "JSON" },
+  { id: "arduino", name: "Arduino" },
+  { id: "linux", name: "Linux" },
 ];
 
 export const Skills = () => {
