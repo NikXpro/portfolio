@@ -1,6 +1,6 @@
-import ContactForm from "@components/Section/Contact/ContactForm";
-import ContactInfo from "@components/Section/Contact/ContactInfo";
-import QrCodeModal from "@components/Section/Contact/QrCodeModal";
+import { ContactForm } from "@components/Section/Contact/ContactForm";
+import { ContactInfo } from "@components/Section/Contact/ContactInfo";
+import { QrCodeModal } from "@components/Section/Contact/QrCodeModal";
 import { useEffect, useState } from "react";
 import "./Contact.scss";
 

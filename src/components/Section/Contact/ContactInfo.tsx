@@ -4,7 +4,7 @@ import "./ContactInfo.scss";
 type ContactInfoProps = {
   onOpenModal: () => void;
 };
-const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
+export const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
   return (
     <div className="contact-info">
       <div className="header">
@@ -50,5 +50,3 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
     </div>
   );
 };
-
-export default ContactInfo;

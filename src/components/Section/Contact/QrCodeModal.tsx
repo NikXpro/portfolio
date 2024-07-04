@@ -7,7 +7,10 @@ interface QrCodeModalProps {
   onClose: () => void;
 }
 
-const QrCodeModal: React.FC<QrCodeModalProps> = ({ isOpen, onClose }) => {
+export const QrCodeModal: React.FC<QrCodeModalProps> = ({
+  isOpen,
+  onClose,
+}) => {
   if (!isOpen) {
     return null;
   }
@@ -42,5 +45,3 @@ const QrCodeModal: React.FC<QrCodeModalProps> = ({ isOpen, onClose }) => {
     </div>
   );
 };
-
-export default QrCodeModal;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactForm.scss";
 
-const ContactForm: React.FC = () => {
+export const ContactForm: React.FC = () => {
   return (
     <form className="contact-form">
       <div className="form-group">
@@ -37,5 +37,3 @@ const ContactForm: React.FC = () => {
     </form>
   );
 };
-
-export default ContactForm;

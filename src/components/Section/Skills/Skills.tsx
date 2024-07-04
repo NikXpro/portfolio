@@ -1,5 +1,4 @@
-import { Icon } from "@components/Ui";
-import { BarChartNoPadding } from "@components/Ui/Chart/BarChartNoPadding";
+import { BarChartNoPadding, Icon } from "@components/Ui";
 import "./Skills.scss";
 
 export type SkillsProps = {

@@ -1,5 +1,5 @@
 import { useGallery } from "@components/Section/Gallery/useGallery";
-import { Card } from "@components/Ui/Card/Card";
+import { Card } from "@components/Ui";
 import "./Gallery.scss";
 
 export type GalleryProps = {

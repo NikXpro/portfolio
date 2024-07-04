@@ -1,6 +1,5 @@
 import { useGallery } from "@components/Section/Gallery/useGallery";
-import { Icon } from "@components/Ui";
-import { Card } from "@components/Ui/Card/Card";
+import { Card, Icon } from "@components/Ui";
 import { useEffect, useState } from "react";
 import "./GalleryProject.scss";
 export type GalleryProjectProps = {
