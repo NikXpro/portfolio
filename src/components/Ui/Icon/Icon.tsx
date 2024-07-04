@@ -22,9 +22,11 @@ import python from "@assets/icons/language-tools/python.svg?react";
 import react from "@assets/icons/language-tools/react.svg?react";
 import sass from "@assets/icons/language-tools/sass.svg?react";
 import typescript from "@assets/icons/language-tools/typescript.svg?react";
+import location from "@assets/icons/location.svg?react";
 import logo from "@assets/icons/logo.svg?react";
 import mail from "@assets/icons/mail.svg?react";
 import qrcode from "@assets/icons/qrcode.svg?react";
+import qrcodeIcon from "@assets/icons/qrcodeIcon.svg?react";
 import twitter from "@assets/icons/twitter.svg?react";
 import youtube from "@assets/icons/youtube.svg?react";
 
@@ -56,6 +58,8 @@ const icons = {
   arduino,
   linux,
   mail,
+  qrcodeIcon,
+  location,
 };
 
 type IconProps = {
