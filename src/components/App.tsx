@@ -12,7 +12,10 @@ const App: React.FC = () => {
       <GalleryProvider>
         <IconsBackground>
           <Layout pageActive={pageActive} />
-          <FullpageWrapper setPageActive={setPageActive} />
+          <FullpageWrapper
+            setPageActive={setPageActive}
+            pageActive={pageActive}
+          />
         </IconsBackground>
       </GalleryProvider>
     </>

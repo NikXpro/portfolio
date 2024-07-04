@@ -7,6 +7,7 @@ import React from "react";
 
 export type FullpageWrapperProps = {
   setPageActive: (page: string) => void;
+  pageActive: string;
 };
 
 export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
