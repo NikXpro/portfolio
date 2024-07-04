@@ -70,7 +70,6 @@ const data = [
 export const BarChartNoPadding: React.FC = () => {
   return (
     <div className="barchart-container">
-      <h2 className="chart-title">Nombre de ligne de code par language</h2>
       <ResponsiveContainer width="100%" height={"100%"}>
         <BarChart
           width={500}
