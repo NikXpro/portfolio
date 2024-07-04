@@ -8,7 +8,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
   return (
     <div className="contact-info">
       <div className="header">
-        <h2>Contact With Me</h2>
+        <h2>Contact Me</h2>
         <a onClick={() => onOpenModal()}>
           <Icon
             id="qrcodeIcon"
