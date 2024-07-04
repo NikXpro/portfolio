@@ -54,14 +54,6 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
                   <GalleryProject fullpageApi={fullpageApi} />
                 </Section>
               </div>
-              <div className="slide">
-                <Section style={{ flexDirection: "column" }}>
-                  <h1>Gallery Sub 2</h1>
-                  <button onClick={() => fullpageApi.moveSlideLeft()}>
-                    Go to Slide 2
-                  </button>{" "}
-                </Section>
-              </div>
             </div>
             <div className="section">
               <Section style={{ width: "100vw" }}>
