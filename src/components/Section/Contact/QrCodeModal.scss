@@ -1,0 +1,35 @@
+.qr-code-modal {
+  position: absolute; /* Change from absolute to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.507);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  backdrop-filter: blur(5px); /* Add blur on background */
+
+  .modal-content {
+    background: #000000;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .close-button {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+}
