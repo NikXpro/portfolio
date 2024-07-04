@@ -4,8 +4,7 @@
   font-weight: 400;
   font-size: 16px;
 
-  color-scheme: light dark;
-  background-color: #141414;
+  background-color: #0e0e0e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,12 +13,19 @@
   text-decoration: inherit;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: inherit;
 }
 
-h2 {
+h2,
+h1 {
   margin: 0;
+  color: #ffffff;
 }
 
 body {
