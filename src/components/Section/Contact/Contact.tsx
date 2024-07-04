@@ -13,10 +13,12 @@ export const Contact = ({ fullpageApi }: ContactProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    if (isModalOpen) {
-      fullpageApi.setAllowScrolling(false);
-    } else {
-      fullpageApi.setAllowScrolling(true);
+    if (fullpageApi) {
+      if (isModalOpen) {
+        fullpageApi.setAllowScrolling(false);
+      } else {
+        fullpageApi.setAllowScrolling(true);
+      }
     }
   }, [isModalOpen, fullpageApi]);
 
@@ -24,7 +26,7 @@ export const Contact = ({ fullpageApi }: ContactProps) => {
     <div className="contact">
       <div className="container">
         <ContactForm />
-        <ContactInfo />
+        <ContactInfo onOpenModal={() => setIsModalOpen(true)} />
         <QrCodeModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
