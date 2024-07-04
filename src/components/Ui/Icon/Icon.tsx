@@ -23,6 +23,7 @@ import react from "@assets/icons/language-tools/react.svg?react";
 import sass from "@assets/icons/language-tools/sass.svg?react";
 import typescript from "@assets/icons/language-tools/typescript.svg?react";
 import logo from "@assets/icons/logo.svg?react";
+import mail from "@assets/icons/mail.svg?react";
 import qrcode from "@assets/icons/qrcode.svg?react";
 import twitter from "@assets/icons/twitter.svg?react";
 import youtube from "@assets/icons/youtube.svg?react";
@@ -54,6 +55,7 @@ const icons = {
   postman,
   arduino,
   linux,
+  mail,
 };
 
 type IconProps = {
