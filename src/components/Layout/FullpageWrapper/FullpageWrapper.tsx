@@ -53,7 +53,10 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
             </div>
             <div className="section">
               <Section style={{ width: "100vw" }}>
-                <Contact fullpageApi={fullpageApi} />
+                <Contact
+                  fullpageApi={fullpageApi}
+                  pageActive={props.pageActive}
+                />
               </Section>
             </div>
           </ReactFullpage.Wrapper>
