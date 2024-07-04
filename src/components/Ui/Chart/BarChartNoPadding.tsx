@@ -46,10 +46,10 @@ const data = [
     Ligne: languageData.TypeScript,
     color: "#3178c6",
   },
-  { name: "css", label: "CSS", Ligne: languageData.CSS, color: "#254bdd" },
-  { name: "json", label: "JSON", Ligne: languageData.JSON, color: "#b2b2b2" },
   { name: "html", label: "HTML", Ligne: languageData.HTML, color: "#e4552d" },
+  { name: "css", label: "CSS", Ligne: languageData.CSS, color: "#254bdd" },
   { name: "sass", label: "Sass", Ligne: languageData.Sass, color: "#cf649a" },
+  { name: "json", label: "JSON", Ligne: languageData.JSON, color: "#b2b2b2" },
   // Utilisation de valeurs statiques pour les langages non inclus dans les données initiales
   //{
   //  name: "c++",
