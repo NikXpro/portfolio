@@ -1,7 +1,7 @@
 import { Gallery, Section } from "@components/Section";
+import { About } from "@components/Section/About/About";
 import { Contact } from "@components/Section/Contact/Contact";
 import { GalleryProject } from "@components/Section/Gallery/GalleryProject";
-import { Skills } from "@components/Section/Skills/Skills";
 import ReactFullpage from "@fullpage/react-fullpage";
 import React from "react";
 
@@ -14,13 +14,13 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
 ) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
   const onLeave = (_origin: any, destination: any, _direction: any): void => {
-    const pageIds: string[] = ["home", "about", "skills", "gallery", "contact"];
+    const pageIds: string[] = ["home", "about", "gallery", "contact"];
     props.setPageActive(pageIds[destination.index]);
   };
 
   return (
     <ReactFullpage
-      anchors={["home", "about", "skills", "gallery", "contact"]}
+      anchors={["home", "about", "gallery", "contact"]}
       menu="#menu"
       controlArrows={false}
       onLeave={onLeave}
@@ -35,12 +35,7 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
             </div>
             <div className="section">
               <Section style={{}}>
-                <h1>About</h1>
-              </Section>
-            </div>
-            <div className="section">
-              <Section style={{}}>
-                <Skills />
+                <About />
               </Section>
             </div>
             <div className="section">
