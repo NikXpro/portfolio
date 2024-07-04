@@ -11,6 +11,7 @@
     height: auto;
     fill: white;
     &:hover {
+      transform: scale(1.08);
       opacity: 0.7;
     }
   }

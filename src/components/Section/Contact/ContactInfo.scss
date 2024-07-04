@@ -24,6 +24,10 @@
       letter-spacing: 0.08rem;
       text-transform: uppercase;
     }
+    .icon:hover {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
   }
 
   hr {
