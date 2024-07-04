@@ -15,7 +15,6 @@ export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
 
   useEffect(() => {
     // Logique pour afficher les informations basées sur selectedId
-    console.log(`Afficher les informations pour ${selectedId}`);
     setCurrentIndex(0);
   }, [selectedId]);
 
