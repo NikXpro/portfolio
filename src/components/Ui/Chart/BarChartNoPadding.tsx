@@ -84,6 +84,7 @@ export const BarChartNoPadding: React.FC = () => {
           <Tooltip
             itemStyle={{ color: "white" }}
             contentStyle={{
+              color: "white",
               backgroundColor: "#2e2e2e",
               border: "none",
             }}
