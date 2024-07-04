@@ -31,7 +31,7 @@ export const About = ({ pageActive }: AboutProps) => {
     <div className="about">
       <div className="container-left">
         <div className="description">
-          <div className="head">
+          <div className="head" style={{ width: "70%" }}>
             <h2 className="title animated-title">
               I am a passionate developer.
             </h2>
@@ -46,9 +46,22 @@ export const About = ({ pageActive }: AboutProps) => {
         </div>
 
         <div className="stats">
-          <div className="head">
-            <h2 className="title animated-title">Code Metrics</h2>
-            <hr className="separator" style={{ width: "42%" }} />
+          <div className="head" style={{ width: "35%" }}>
+            <div className="title-container">
+              <h2 className="title animated-title">Code Metrics</h2>
+              <a href="https://github.com/NikXpro/github_stats" target="_blank">
+                <Icon
+                  id="code"
+                  style={{
+                    width: "2rem",
+                    height: "2rem",
+                    fill: "white",
+                    cursor: "pointer",
+                  }}
+                />
+              </a>
+            </div>
+            <hr className="separator" />
           </div>
           <BarChartNoPadding />
         </div>
