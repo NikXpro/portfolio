@@ -1,4 +1,5 @@
 import { BarChartNoPadding, Icon } from "@components/Ui";
+import { useAnimateTitle } from "@hooks/useAnimateTitle";
 import "./About.scss";
 
 const languageTools = [
@@ -19,13 +20,23 @@ const languageTools = [
   { id: "linux", name: "Linux" },
 ];
 
-export const About = () => {
+export type AboutProps = {
+  pageActive: string;
+};
+
+export const About = ({ pageActive }: AboutProps) => {
+  useAnimateTitle(pageActive, "about");
+
   return (
     <div className="about">
       <div className="container-left">
         <div className="description">
-          <h2 className="description-title">I am a passionate developer.</h2>
-          <hr className="separator" />
+          <div className="head">
+            <h2 className="title animated-title">
+              I am a passionate developer.
+            </h2>
+            <hr className="separator" />
+          </div>
           <p className="description-text">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -35,12 +46,18 @@ export const About = () => {
         </div>
 
         <div className="stats">
+          <div className="head">
+            <h2 className="title animated-title">Code Metrics</h2>
+            <hr className="separator" style={{ width: "42%" }} />
+          </div>
           <BarChartNoPadding />
         </div>
       </div>
       <div className="container-right">
-        <h2 className="tool-title">Tools and languages</h2>
-        <hr className="separator" />
+        <div className="head">
+          <h2 className="title animated-title">Tools and languages</h2>
+          <hr className="separator" />
+        </div>
 
         <div className="list">
           {languageTools.map((tool) => (

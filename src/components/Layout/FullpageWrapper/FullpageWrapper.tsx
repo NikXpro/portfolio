@@ -36,7 +36,7 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
             </div>
             <div className="section">
               <Section style={{}}>
-                <About />
+                <About pageActive={props.pageActive} />
               </Section>
             </div>
             <div className="section">
