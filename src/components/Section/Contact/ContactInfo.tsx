@@ -46,6 +46,17 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
           />{" "}
           <span>Marseille, France</span>
         </li>
+        <li>
+          <Icon
+            id="discord"
+            style={{
+              width: "2rem",
+              height: "2rem",
+              fill: "#d0d0d0",
+            }}
+          />
+          <a href="https://discord.com/users/372925126808961025">@nikxpro</a>
+        </li>
       </ul>
     </div>
   );
