@@ -4,9 +4,8 @@ export const Counter = ({ selectedId }: { selectedId: string }) => {
   const numberList = [
     { id: "home", number: "1" },
     { id: "about", number: "2" },
-    { id: "skills", number: "3" },
-    { id: "gallery", number: "4" },
-    { id: "contact", number: "5" },
+    { id: "gallery", number: "3" },
+    { id: "contact", number: "4" },
   ];
 
   const currentIndex = numberList.findIndex((item) => item.id === selectedId);
