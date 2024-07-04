@@ -9,9 +9,9 @@ type NavItem = {
 };
 
 const navList: NavItem[] = [
-  { id: "home", name: "Accueil", path: "#home" },
-  { id: "about", name: "À propos", path: "#about" },
-  { id: "gallery", name: "Galerie", path: "#gallery" },
+  { id: "home", name: "Home", path: "#home" },
+  { id: "about", name: "About", path: "#about" },
+  { id: "gallery", name: "Gallery", path: "#gallery" },
   { id: "contact", name: "Contact", path: "#contact" },
 ];
 
