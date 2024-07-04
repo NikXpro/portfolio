@@ -35,7 +35,10 @@ export const Skills = () => {
           <h2>Language and Tools</h2>
           <div className="skills-container__content__language-tools__list">
             {languageTools.map((tool) => (
-              <div className="skills-container__content__language-tools__list__item">
+              <div
+                key={tool.id}
+                className="skills-container__content__language-tools__list__item"
+              >
                 <Icon
                   id={tool.id}
                   style={{ width: 55, height: 55, fill: "white" }}
