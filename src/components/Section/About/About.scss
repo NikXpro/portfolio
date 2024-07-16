@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 65vh;
+  height: 65%;
+  width: 78%;
 
   a {
     display: flex;
@@ -12,15 +13,14 @@
     text-decoration: none;
   }
 
-  width: 75vw;
   .head {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1vw;
     width: 70%;
 
     .title {
-      font-size: 2rem;
+      font-size: 1.15vw;
       font-weight: 500;
       text-align: start;
       text-transform: uppercase;
@@ -47,14 +47,18 @@
     .description {
       display: flex;
       flex-direction: column;
-      gap: 3rem;
+      gap: 2vw;
       width: 100%;
+
+      .head {
+        width: 29vw;
+      }
 
       .description-text {
         font-family: "Poppins", sans-serif;
         font-style: italic;
         text-indent: 2rem;
-        font-size: 1.1rem;
+        font-size: 0.9vw;
         font-weight: 100;
         text-align: center;
         letter-spacing: 0.1rem;
@@ -69,6 +73,11 @@
         justify-content: space-between;
         align-items: center;
 
+        .icon {
+          width: 1.9vw;
+          height: 1.9vw;
+        }
+
         .icon:hover {
           transform: scale(1.05);
           opacity: 0.8;
@@ -82,21 +91,21 @@
       height: 100%;
       justify-content: center;
       align-items: start;
-      gap: 3rem;
+      gap: 2vw;
     }
   }
 
   .container-right {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2vw;
 
     width: 40%;
     height: 100%;
 
     .list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(5vw, 1fr));
       gap: 1rem;
       .item {
         background-color: rgb(39, 39, 39);
@@ -109,6 +118,8 @@
         }
 
         .icon {
+          width: 2.9vw;
+
           position: absolute;
           top: 50%;
           left: 50%;
@@ -117,6 +128,113 @@
 
         &:hover {
           background-color: rgb(60, 60, 60);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 2150px) {
+  /* Styles pour Desktop (Full HD) */
+  .about {
+    .container-right {
+      gap: 2vw;
+      .list {
+        grid-template-columns: repeat(auto-fill, minmax(5vw, 1fr));
+        .item {
+          .icon {
+            width: 2.9vw;
+          }
+        }
+      }
+    }
+
+    .container-left {
+      .stats {
+        gap: 2vw;
+        .head {
+          width: 16vw;
+        }
+      }
+
+      .description {
+        gap: 2vw;
+        .description-text {
+          font-size: 0.9vw;
+        }
+      }
+    }
+
+    .head {
+      gap: 1vw;
+      .title {
+        font-size: 1.15vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 80%;
+    gap: 4vh;
+
+    .head {
+      width: 75vw;
+      height: fit-content;
+      gap: 2vw;
+      .title {
+        font-size: 3.5vw;
+      }
+    }
+
+    .container-left {
+      width: 100%;
+      height: fit-content;
+      gap: 4vh;
+      .description {
+        .head {
+          width: 75vw;
+          height: fit-content;
+          .title {
+            font-size: 3.5vw;
+          }
+        }
+
+        .description-text {
+          font-size: 2.5vw;
+          text-align: start;
+        }
+      }
+      .stats {
+        .head {
+          width: 75vw;
+          .icon {
+            width: 5.5vw;
+            height: 5.5vw;
+          }
+        }
+
+        width: 75vw;
+        height: 22vh;
+      }
+    }
+
+    .container-right {
+      width: 100%;
+      height: fit-content;
+
+      .list {
+        grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr));
+        gap: 2vw;
+        .item {
+          .icon {
+            width: 5.5vw;
+          }
         }
       }
     }

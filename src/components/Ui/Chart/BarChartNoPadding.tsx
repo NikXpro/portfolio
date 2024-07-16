@@ -75,7 +75,7 @@ export const BarChartNoPadding: React.FC = () => {
           width={500}
           height={300}
           data={data}
-          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+          margin={{ top: 0, right: 2, left: 0, bottom: 0 }}
           barSize={20}
         >
           <XAxis dataKey="label" />
@@ -86,6 +86,7 @@ export const BarChartNoPadding: React.FC = () => {
               color: "white",
               backgroundColor: "#2e2e2e",
               border: "none",
+              borderRadius: "10px",
             }}
           />
           <CartesianGrid strokeDasharray="3 3" />

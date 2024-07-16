@@ -1,7 +1,7 @@
 .counter {
   position: relative;
   height: 100%;
-  width: 5rem;
+  width: 4.25vw;
   overflow: hidden;
   display: flex;
   align-items: start;
@@ -13,11 +13,11 @@
     flex-direction: column;
     align-items: start;
 
-    gap: 1.25rem;
+    gap: 1.25vw;
     transition: transform 0.8s;
 
     .number {
-      height: 100px;
+      height: 6.25vw;
       display: flex;
       justify-content: start;
       align-items: center;
@@ -25,12 +25,24 @@
 
       text-overflow: ellipsis;
       font-family: "Trip Sans";
-      font-size: 8rem;
+      font-size: 6.9vw;
       font-style: normal;
       font-weight: 900;
       line-height: normal;
       letter-spacing: 0.08rem;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 2150px) {
+  /* Styles pour Desktop (Full HD) */
+  .counter {
+    .numbers {
+      .number {
+        height: 6.25vw;
+        font-size: 6.9vw;
+      }
     }
   }
 }

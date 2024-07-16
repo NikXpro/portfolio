@@ -31,7 +31,7 @@ export const About = ({ pageActive }: AboutProps) => {
     <div className="about">
       <div className="container-left">
         <div className="description">
-          <div className="head" style={{ width: "70%" }}>
+          <div className="head">
             <h2 className="title animated-title">
               I am a passionate developer.
             </h2>
@@ -46,15 +46,13 @@ export const About = ({ pageActive }: AboutProps) => {
         </div>
 
         <div className="stats">
-          <div className="head" style={{ width: "35%" }}>
+          <div className="head">
             <div className="title-container">
               <h2 className="title animated-title">Code Metrics</h2>
               <a href="https://github.com/NikXpro/github_stats" target="_blank">
                 <Icon
                   id="code"
                   style={{
-                    width: "2rem",
-                    height: "2rem",
                     fill: "white",
                     cursor: "pointer",
                   }}
@@ -75,10 +73,7 @@ export const About = ({ pageActive }: AboutProps) => {
         <div className="list">
           {languageTools.map((tool) => (
             <div key={tool.id} className="item">
-              <Icon
-                id={tool.id}
-                style={{ width: "4rem", height: "4rem", fill: "white" }}
-              />
+              <Icon id={tool.id} style={{ fill: "white" }} />
             </div>
           ))}
         </div>

@@ -6,3 +6,17 @@
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 3vw;
 }
+
+@media (max-width: 1024px) {
+  .gallery {
+    width: 75vw;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

@@ -13,8 +13,6 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
           <Icon
             id="qrcodeIcon"
             style={{
-              width: "2.5rem",
-              height: "2.5rem",
               fill: "#d0d0d0",
               cursor: "pointer",
             }}
@@ -28,8 +26,6 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
           <Icon
             id="mail"
             style={{
-              width: "2rem",
-              height: "2rem",
               fill: "#d0d0d0",
             }}
           />
@@ -39,8 +35,6 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
           <Icon
             id="location"
             style={{
-              width: "2rem",
-              height: "2rem",
               fill: "#d0d0d0",
             }}
           />{" "}
@@ -50,8 +44,6 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ onOpenModal }) => {
           <Icon
             id="discord"
             style={{
-              width: "2rem",
-              height: "2rem",
               fill: "#d0d0d0",
             }}
           />

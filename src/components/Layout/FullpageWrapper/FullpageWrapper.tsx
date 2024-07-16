@@ -41,12 +41,12 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
             </div>
             <div className="section">
               <div className="slide">
-                <Section style={{ flexDirection: "column" }}>
+                <Section style={{}}>
                   <Gallery fullpageApi={fullpageApi} />
                 </Section>
               </div>
               <div className="slide">
-                <Section style={{ flexDirection: "column" }}>
+                <Section style={{}}>
                   <GalleryProject fullpageApi={fullpageApi} />
                 </Section>
               </div>

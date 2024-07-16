@@ -15,7 +15,7 @@ export const Counter = ({ selectedId }: { selectedId: string }) => {
       <div
         className="numbers"
         style={{
-          transform: `translateY(calc(-${currentIndex} * (6.25rem + 1.25rem)))`,
+          transform: `translateY(calc(-${currentIndex} * (6.25vw + 1.25vw)))`,
         }}
       >
         {numberList.map((item, index) => (

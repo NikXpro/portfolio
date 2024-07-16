@@ -7,7 +7,7 @@
   .number {
     display: flex;
     align-items: center;
-    height: 6.25rem;
+    height: 6.25vw;
     width: 100%;
     gap: 0.12rem;
     .zero {
@@ -16,12 +16,24 @@
 
       text-overflow: ellipsis;
       font-family: "Trip Sans";
-      font-size: 8rem;
+      font-size: 6.9vw;
       font-style: normal;
       font-weight: 900;
       line-height: normal;
       letter-spacing: 0.08rem;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 2150px) {
+  /* Styles pour Desktop (Full HD) */
+  .page-counter {
+    .number {
+      height: 6.25vw;
+      .zero {
+        font-size: 7.25vw;
+      }
     }
   }
 }

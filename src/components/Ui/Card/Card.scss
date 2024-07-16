@@ -19,11 +19,11 @@
     color: #fff;
     text-align: center;
     font-family: "Trip Sans";
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    letter-spacing: 0.015rem;
+    letter-spacing: 0.05vw;
     text-transform: capitalize;
   }
 
@@ -37,5 +37,20 @@
   }
   &:not(:hover) {
     transition: filter 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    width: 75vw;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .card {
+    h2 {
+      font-size: 3.25vw;
+    }
   }
 }

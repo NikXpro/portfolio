@@ -1,6 +1,6 @@
 header {
   display: flex;
-  padding: 2.5rem 2.375rem;
+  padding: 0.9vw 1.75vw;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
@@ -56,6 +56,63 @@ header {
       cursor: pointer;
       transform: scale(1.04);
       opacity: 0.6;
+    }
+  }
+}
+
+@media (max-width: 2150px) {
+  /* Styles pour Desktop (Full HD) */
+  header {
+    padding: 1.5vw;
+
+    .icon.logo {
+      width: 3.8125vw;
+    }
+
+    .menu {
+      gap: 3.5vw;
+
+      .navbar {
+        gap: 2.5vw;
+
+        .nav-item {
+          font-size: 1.2vw;
+        }
+      }
+    }
+
+    .download {
+      .icon.download {
+        width: 2.5vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  header {
+    padding: 2.5vw;
+
+    .icon.logo {
+      width: 10.8125vw;
+    }
+
+    .menu {
+      gap: 5vw;
+
+      .navbar {
+        gap: 4.5vw;
+
+        .nav-item {
+          font-size: 2.8vw;
+        }
+      }
+    }
+
+    .download {
+      .icon.download {
+        width: 6.5vw;
+      }
     }
   }
 }

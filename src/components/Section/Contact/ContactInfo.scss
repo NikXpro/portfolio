@@ -1,10 +1,7 @@
 .contact-info {
-  transform: translateY(-1rem);
   width: 100%;
-  max-width: 24.3rem;
-  margin: 0 auto;
-  border-radius: 10px;
   text-align: start;
+  transform: translateY(-0.8vw);
 
   color: #fff;
 
@@ -12,9 +9,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: fit-content;
     h2 {
-      margin-bottom: 1.6rem;
-      font-size: 2rem;
+      font-size: 1.8vw;
       font-weight: bold;
       text-overflow: ellipsis;
       font-family: "Trip Sans";
@@ -24,47 +21,89 @@
       letter-spacing: 0.08rem;
       text-transform: uppercase;
     }
-    .icon:hover {
-      transform: scale(1.05);
-      opacity: 0.8;
+    a {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon:hover {
+        transform: scale(1.05);
+        opacity: 0.8;
+      }
     }
   }
 
   hr {
     border: 0;
-    height: 0.15rem;
+    height: 0.1vw;
     background: #d0d0d0;
-    margin: 10px 0 20px;
-    margin-bottom: 2rem;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
   }
 
   ul {
     list-style: none;
-    padding: 0 0 0 1.5rem;
+    padding: 0 0 0 1.45vw;
 
     li {
       display: flex;
       align-items: center;
       justify-content: start;
-      margin-bottom: 10px;
-      gap: 1rem;
+      margin-bottom: 0.85vw;
+      gap: 0.95vw;
 
       .icon {
-        font-size: 1.2rem;
-        font-weight: 500;
+        width: 1.75vw;
+        height: 1.75vw;
       }
-
       a,
       span {
         color: #d0d0d0;
         text-decoration: none;
         font-family: "Trip Sans";
-        font-size: 1.2rem;
+        font-size: 1vw;
         font-weight: 500;
         letter-spacing: 0.075rem;
 
         &:hover {
           text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact-info {
+    transform: translateY(0);
+    .header {
+      h2 {
+        font-size: 4.5vw;
+      }
+      a {
+        .icon {
+          width: 5vw;
+          height: 5vw;
+        }
+      }
+    }
+    hr {
+      margin-top: 2vw;
+      margin-bottom: 2.5vw;
+    }
+
+    ul {
+      li {
+        margin-bottom: 2.85vw;
+        gap: 2.5vw;
+        .icon {
+          width: 5.5vw;
+          height: 5.5vw;
+        }
+        a,
+        span {
+          font-size: 4.5vw;
         }
       }
     }
