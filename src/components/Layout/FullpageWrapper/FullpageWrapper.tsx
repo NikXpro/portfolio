@@ -1,4 +1,4 @@
-import { Gallery, Section } from "@components/Section";
+import { Gallery, Home, Section } from "@components/Section";
 import { About } from "@components/Section/About/About";
 import { Contact } from "@components/Section/Contact/Contact";
 import { GalleryProject } from "@components/Section/Gallery/GalleryProject";
@@ -31,7 +31,7 @@ export const FullpageWrapper: React.FC<FullpageWrapperProps> = (
           <ReactFullpage.Wrapper>
             <div className="section">
               <Section style={{}}>
-                <h1>Home</h1>
+                <Home fullpageApi={fullpageApi} />
               </Section>
             </div>
             <div className="section">
