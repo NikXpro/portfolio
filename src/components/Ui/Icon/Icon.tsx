@@ -2,6 +2,7 @@ import { createElement } from "react";
 
 import arrowDown from "@assets/icons/arrowDown.svg?react";
 import arrowForward from "@assets/icons/arrowForward.svg?react";
+import close from "@assets/icons/close.svg?react";
 import code from "@assets/icons/code.svg?react";
 import discord from "@assets/icons/discord.svg?react";
 import dot from "@assets/icons/dot.svg?react";
@@ -64,16 +65,19 @@ const icons = {
   location,
   discord,
   code,
+  close,
 };
 
 type IconProps = {
   id: string;
   style?: React.CSSProperties;
+  onClick?: () => void;
 };
 
-export function Icon({ id, style }: IconProps) {
+export function Icon({ id, style, onClick }: IconProps) {
   return createElement(icons[id as keyof typeof icons] || "svg", {
     className: `icon ${id}`,
-    style: style,
+    style: { ...style, cursor: onClick ? "pointer" : undefined },
+    onClick: onClick,
   });
 }
