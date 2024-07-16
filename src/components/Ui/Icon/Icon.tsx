@@ -28,6 +28,7 @@ import typescript from "@assets/icons/language-tools/typescript.svg?react";
 import location from "@assets/icons/location.svg?react";
 import logo from "@assets/icons/logo.svg?react";
 import mail from "@assets/icons/mail.svg?react";
+import open from "@assets/icons/open.svg?react";
 import qrcode from "@assets/icons/qrcode.svg?react";
 import qrcodeIcon from "@assets/icons/qrcodeIcon.svg?react";
 import twitter from "@assets/icons/twitter.svg?react";
@@ -66,6 +67,7 @@ const icons = {
   discord,
   code,
   close,
+  open,
 };
 
 type IconProps = {

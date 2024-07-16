@@ -1,0 +1,27 @@
+{
+  "frontend": [
+    {
+      "title": "Projet Booki",
+      "color": "#6BB193",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "sourceCode": "https://github.com/NikXpro/booki-app",
+      "image": "booki.webp",
+      "technologies": ["html", "css", "figma"],
+      "preview": "https://booki.nikx.fr"
+    },
+    {
+      "title": "Projet Booki",
+      "color": "#6BB193",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "sourceCode": "https://github.com/NikXpro/booki-app",
+      "image": "",
+      "technologies": ["html", "css", "figma"],
+      "preview": "https://booki.nikx.fr"
+    }
+  ],
+  "backend": [],
+  "design": [],
+  "modding": [],
+  "tools": [],
+  "modelisations": []
+}

@@ -95,15 +95,38 @@
         color: #000000;
       }
     }
-    .project-image {
+    .project-image-container {
+      position: relative;
       width: 100%;
       height: auto;
       border-radius: 0.5vw;
-      transition: all 0.3s linear;
-      &:hover {
-        filter: brightness(0.5);
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
+
+      .project-image {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5vw;
+        transition: all 0.3s linear;
+        &:hover {
+          filter: brightness(0.5);
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      .icon {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2vw; /* Ajustez la taille selon vos besoins */
+        height: 2vw; /* Ajustez la taille selon vos besoins */
+        pointer-events: none; /* Permet de ne pas interférer avec le hover de l'image */
+        fill: white;
+      }
+
+      &:hover .icon {
+        display: block;
       }
     }
     .technologies-list {

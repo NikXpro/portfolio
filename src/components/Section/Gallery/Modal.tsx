@@ -9,6 +9,8 @@ interface ModalProps {
   description: string;
   sourceCode: string;
   technologies: string[];
+  preview: string;
+  image: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -17,16 +19,18 @@ const Modal: React.FC<ModalProps> = ({
   title,
   description,
   sourceCode,
+  preview,
   technologies,
+  image,
 }) => {
   if (!show) {
     return null;
   }
 
   return (
-    <div className="modal-container">
-      <div className="modal" onClick={onClose}>
-        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-container" onClick={onClose}>
+      <div className="modal" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-content">
           <div className="modal-header">
             <h3 className="modal-title">{title}</h3>
             <Icon id="close" onClick={onClose} />
@@ -37,13 +41,15 @@ const Modal: React.FC<ModalProps> = ({
               <p className="description">{description}</p>
             </div>
             <div className="right-container">
-              <img
-                className="project-image"
-                src={
-                  "https://word-dev-portfolio.com/wp-content/uploads/elementor/thumbs/Booki-qi14jj5b94iowhm7upcj9p11sl1ux502jw53us79f4.webp"
-                }
-                alt="Project"
-              />
+              <div className="project-image-container">
+                <img
+                  className="project-image"
+                  src={`/images/${image}`}
+                  alt="Project"
+                  onClick={() => window.open(preview, "_blank")}
+                />
+                <Icon id="open" />
+              </div>
               {sourceCode && (
                 <button
                   className="codesource"
