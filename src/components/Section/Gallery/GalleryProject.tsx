@@ -8,17 +8,15 @@ export type GalleryProjectProps = {
 };
 
 export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
-  const [currentIndex, setCurrentIndex] = useState(0); // État pour l'index actuel
-
+  const [currentIndex, setCurrentIndex] = useState(0);
   const { selectedId } = useGallery();
 
   useEffect(() => {
-    // Logique pour afficher les informations basées sur selectedId
     setCurrentIndex(0);
   }, [selectedId]);
 
   const cards = {
-    card1: [
+    frontend: [
       { title: "Card 1", color: "#6BB193" },
       { title: "Card 2", color: "#145584" },
       { title: "Card 3", color: "#8B4B4B" },
@@ -48,7 +46,7 @@ export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
       { title: "Card 27", color: "#CAA5A7" },
       { title: "Card 28", color: "#CAA5A7" },
     ],
-    card2: [
+    backend: [
       { title: "Card 1", color: "#6BB193" },
       { title: "Card 2", color: "#145584" },
       { title: "Card 3", color: "#8B4B4B" },
@@ -61,16 +59,15 @@ export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
       { title: "Card 6", color: "#CAA5A7" },
       { title: "Card 6", color: "#CAA5A7" },
     ],
-    card3: [],
-    card4: [],
-    card5: [],
-    card6: [],
+    design: [],
+    modding: [],
+    tools: [],
+    modelisations: [],
   };
 
   const cardsPerPage = 12;
-  const totalPages = Math.ceil(
-    cards[selectedId as keyof typeof cards].length / cardsPerPage
-  );
+  const selectedCards = cards[selectedId as keyof typeof cards] || [];
+  const totalPages = Math.ceil(selectedCards.length / cardsPerPage);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -89,18 +86,15 @@ export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
     for (let i = 0; i < totalPages; i++) {
       const startIndex = i * cardsPerPage;
       const endIndex = startIndex + cardsPerPage;
-      galleries.push(
-        cards[selectedId as keyof typeof cards].slice(startIndex, endIndex)
-      );
+      galleries.push(selectedCards.slice(startIndex, endIndex));
     }
     return galleries;
   };
 
   const galleries = getGalleries();
-  const showArrows =
-    cards[selectedId as keyof typeof cards].length >= cardsPerPage;
+  const showArrows = selectedCards.length >= cardsPerPage;
+  const haveCard = selectedCards.length > 0;
 
-  const haveCard = cards[selectedId as keyof typeof cards].length > 0;
   return (
     <div
       className="gallery-project"

@@ -18,34 +18,34 @@ export const Gallery = ({ fullpageApi }: GalleryProps) => {
   return (
     <div className="gallery">
       <Card
-        title="Card 1"
+        title="Frontend"
         color="#6BB193"
-        onClick={() => handleClick("card1")}
+        onClick={() => handleClick("frontend")}
       />
       <Card
-        title="Card 2"
+        title="Backend"
         color="#145584"
-        onClick={() => handleClick("card2")}
+        onClick={() => handleClick("backend")}
       />
       <Card
-        title="Card 3"
+        title="Design"
         color="#8B4B4B"
-        onClick={() => handleClick("card3")}
+        onClick={() => handleClick("design")}
       />
       <Card
-        title="Card 4"
+        title="Modding"
         color="#72739D"
-        onClick={() => handleClick("card4")}
+        onClick={() => handleClick("modding")}
       />
       <Card
-        title="Card 5"
+        title="Tools"
         color="#DD7680"
-        onClick={() => handleClick("card5")}
+        onClick={() => handleClick("tools")}
       />
       <Card
-        title="Card 6"
+        title="Modelisations"
         color="#CAA5A7"
-        onClick={() => handleClick("card6")}
+        onClick={() => handleClick("modelisations")}
       />
     </div>
   );
