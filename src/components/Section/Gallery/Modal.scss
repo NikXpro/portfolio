@@ -1,0 +1,139 @@
+.modal-container {
+  position: fixed; /* Utilisez fixed pour qu'elle soit au-dessus de tout */
+  top: 0;
+  left: 50vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  z-index: 1000; /* Assurez-vous qu'elle est au-dessus de tout */
+  color: white;
+}
+
+.modal {
+  background: rgb(22, 22, 22);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 50rem;
+  width: 100%;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 20px;
+
+  .modal-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.3s ease;
+    opacity: 1;
+
+    &:hover {
+      transform: scale(1.1) rotate(90deg);
+      opacity: 0.7;
+    }
+  }
+}
+
+.modal-body {
+  display: flex;
+  padding: 30px;
+  padding-top: 0;
+  .left-container {
+    width: 100%;
+    .description {
+      text-align: start;
+      font-size: rem;
+      font-weight: 300;
+      line-height: 1.5;
+      text-align: sta;
+    }
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: start;
+    width: 100%;
+    margin: 0;
+    .codesource {
+      width: 100%;
+      border: 1px solid #d0d0d0;
+      background-color: transparent;
+      color: #d0d0d0;
+      padding: 0.4vw 0;
+      border-radius: 0.5vw;
+      margin: 0;
+      font-size: 0.8vw;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #d0d0d0;
+        color: #000000;
+      }
+    }
+    .project-image {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5vw;
+      transition: all 0.3s linear;
+      &:hover {
+        filter: brightness(0.5);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .technologies-list {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(auto-fill, minmax(2.5vw, 1fr));
+      gap: 0.5vw;
+      align-items: end;
+      justify-content: end;
+      .item {
+        background-color: rgb(39, 39, 39);
+        position: relative;
+        border-radius: 0.5vw;
+        transition: all 0.3s ease-in-out;
+
+        &::after {
+          content: "";
+          padding-bottom: 100%;
+          display: block;
+        }
+
+        .icon {
+          width: 1.5vw;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
