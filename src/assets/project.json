@@ -1,7 +1,7 @@
 {
   "frontend": [
     {
-      "title": "Projet Booki",
+      "title": "Booki",
       "color": "#6BB193",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
       "sourceCode": "https://github.com/NikXpro/booki-app",
@@ -10,13 +10,22 @@
       "preview": "https://booki.nikx.fr"
     },
     {
-      "title": "Projet Booki",
-      "color": "#6BB193",
+      "title": "Sophie Bluel",
+      "color": "#F29191",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      "sourceCode": "https://github.com/NikXpro/booki-app",
-      "image": "",
-      "technologies": ["html", "css", "figma"],
-      "preview": "https://booki.nikx.fr"
+      "sourceCode": "https://github.com/NikXpro/sophie-bluel-app",
+      "image": "sophie-bluel.png",
+      "technologies": ["html", "css", "javascript"],
+      "preview": "https://sophie-bluel.nikx.fr"
+    },
+    {
+      "title": "Nina carducci",
+      "color": "#3498DB",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "sourceCode": "https://github.com/NikXpro/nina-carducci",
+      "image": "nina-carducci.png",
+      "technologies": [],
+      "preview": "https://nina-carducci.nikx.fr"
     }
   ],
   "backend": [],
