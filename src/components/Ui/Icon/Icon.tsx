@@ -20,6 +20,7 @@ import json from "@assets/icons/language-tools/json.svg?react";
 import linux from "@assets/icons/language-tools/linux.svg?react";
 import lua from "@assets/icons/language-tools/lua.svg?react";
 import nodejs from "@assets/icons/language-tools/nodejs.svg?react";
+import performance from "@assets/icons/language-tools/performance.svg?react";
 import postman from "@assets/icons/language-tools/postman.svg?react";
 import python from "@assets/icons/language-tools/python.svg?react";
 import react from "@assets/icons/language-tools/react.svg?react";
@@ -66,6 +67,7 @@ const icons = {
   location,
   discord,
   code,
+  performance,
   close,
   open,
 };

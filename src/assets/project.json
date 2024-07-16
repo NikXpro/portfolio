@@ -24,7 +24,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
       "sourceCode": "https://github.com/NikXpro/nina-carducci",
       "image": "nina-carducci.png",
-      "technologies": [],
+      "technologies": ["performance"],
       "preview": "https://nina-carducci.nikx.fr"
     }
   ],
