@@ -12,13 +12,13 @@ import {
 import "./BarChartNoPadding.scss";
 
 const languageData = {
-  TypeScript: 1881,
+  TypeScript: 1980,
   CSS: 2014,
-  JSON: 948,
+  JSON: 984,
   HTML: 1266,
-  SVG: 711,
-  Sass: 1462,
-  Total: 26303,
+  SVG: 726,
+  Sass: 2098,
+  Total: 27089,
   Lua: 9153,
   JavaScript: 6280,
   SQL: 0,
