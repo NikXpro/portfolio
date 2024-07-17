@@ -78,3 +78,28 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .home {
+    gap: 4.5vw;
+    .hero-title {
+      line-height: 7.5vw;
+      .first-line {
+        font-size: 1.5vw;
+      }
+      .second-line {
+        font-size: 6vw;
+      }
+      .third-line {
+        font-size: 6.5vw;
+      }
+    }
+    .scroll-button {
+      width: 35vw;
+      padding: 2vw 0;
+      border-radius: 10vw;
+      margin: 0;
+      font-size: 2.5vw;
+    }
+  }
+}

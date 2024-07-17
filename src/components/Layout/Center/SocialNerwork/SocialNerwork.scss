@@ -35,3 +35,12 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .socialnetwork {
+    gap: 1.5vw;
+    .icon {
+      width: 4.5vw;
+    }
+  }
+}

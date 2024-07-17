@@ -40,3 +40,13 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .pagination {
+    gap: 0.5vw;
+    .icon {
+      width: 4vw;
+      height: auto;
+    }
+  }
+}

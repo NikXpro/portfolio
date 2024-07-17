@@ -71,7 +71,7 @@ export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
       <div
         className="gallery-project"
         style={{
-          width: showArrows ? "70vw" : "60vw",
+          width: showArrows ? "80vw" : "75vw",
           alignItems: haveCard ? "start" : "center",
         }}
       >
@@ -97,7 +97,7 @@ export const GalleryProject = ({ fullpageApi }: GalleryProjectProps) => {
         {haveCard ? (
           <div className="center">
             <div
-              className="gallery"
+              className="gallery2"
               style={{
                 transform: `translateX(-${currentIndex * (100 + 1.5 * 3.3)}%)`,
               }}

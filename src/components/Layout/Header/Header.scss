@@ -116,3 +116,32 @@ header {
     }
   }
 }
+
+@media (max-width: 1024px) {
+  header {
+    padding: 1.5vw;
+
+    .icon.logo {
+      width: 6.5vw;
+    }
+
+    .menu {
+      gap: 4.5vw;
+
+      .navbar {
+        gap: 3.5vw;
+
+        .nav-item {
+          font-size: 2.25vw;
+        }
+      }
+    }
+
+    .download {
+      .icon.download {
+        width: 4.5vw;
+        height: auto;
+      }
+    }
+  }
+}

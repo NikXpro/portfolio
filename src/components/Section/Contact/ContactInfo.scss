@@ -109,3 +109,40 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .contact-info {
+    transform: translateY(0);
+    flex-direction: column-reverse;
+    .header {
+      h2 {
+        font-size: 3.5vw;
+      }
+      a {
+        .icon {
+          width: 4.5vw;
+          height: 4.5vw;
+        }
+      }
+    }
+    hr {
+      margin-top: 1.5vw;
+      margin-bottom: 2.5vw;
+    }
+
+    ul {
+      li {
+        margin-bottom: 2.85vw;
+        gap: 2.5vw;
+        .icon {
+          width: 4.5vw;
+          height: 4.5vw;
+        }
+        a,
+        span {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}

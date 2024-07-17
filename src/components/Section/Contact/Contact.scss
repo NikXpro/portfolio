@@ -27,3 +27,13 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .contact {
+    width: 70vw;
+    .container {
+      flex-direction: column-reverse;
+      gap: 8.5vw;
+    }
+  }
+}
