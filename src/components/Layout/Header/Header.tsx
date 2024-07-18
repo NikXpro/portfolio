@@ -21,11 +21,11 @@ export type HeaderProps = {
 
 export const Header = (props: HeaderProps) => {
   const handleDownload = () => {
-    const filePath = "/CV_NATHAN.pdf";
+    const filePath = "/docs/CV_Nathan.pdf";
 
     const link = document.createElement("a");
     link.href = filePath;
-    link.download = "CV_NATHAN.pdf";
+    link.download = "CV_Nathan.pdf";
     document.body.appendChild(link);
 
     link.click();
