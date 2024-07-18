@@ -38,10 +38,11 @@ export const About = ({ pageActive }: AboutProps) => {
             <hr className="separator" />
           </div>
           <p className="description-text">
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Quisquam, quos."
+            "Hi! I'm Nathan, a web developer with two years of experience. I
+            started with LUA on FiveM and now specialize in React. I enjoy
+            creating intuitive and attractive user interfaces, and I also love
+            3D modeling. I'm always looking for new challenges and aim to design
+            innovative solutions. Thanks for visiting my portfolio!"
           </p>
         </div>
 
