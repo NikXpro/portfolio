@@ -19,6 +19,7 @@ import javascript from "@assets/icons/language-tools/javascript.svg?react";
 import json from "@assets/icons/language-tools/json.svg?react";
 import linux from "@assets/icons/language-tools/linux.svg?react";
 import lua from "@assets/icons/language-tools/lua.svg?react";
+import mongoose from "@assets/icons/language-tools/mongoose.svg?react";
 import nodejs from "@assets/icons/language-tools/nodejs.svg?react";
 import performance from "@assets/icons/language-tools/performance.svg?react";
 import postman from "@assets/icons/language-tools/postman.svg?react";
@@ -62,6 +63,7 @@ const icons = {
   postman,
   arduino,
   linux,
+  mongoose,
   mail,
   qrcodeIcon,
   location,
