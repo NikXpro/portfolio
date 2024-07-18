@@ -3,7 +3,7 @@
     {
       "title": "Booki",
       "color": "#6BB193",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "description": "Booki est une plateforme qui permet aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Ce projet vise à créer une page d'accueil attractive et fonctionnelle pour cette plateforme.",
       "sourceCode": "https://github.com/NikXpro/booki-app",
       "image": "booki.webp",
       "technologies": ["html", "css", "figma"],
@@ -12,23 +12,68 @@
     {
       "title": "Sophie Bluel",
       "color": "#F29191",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "description": "Sophie Bluel est un portfolio en ligne pour une artiste photographe. Le site met en avant ses œuvres et permet aux visiteurs de la contacter pour des projets professionnels.",
       "sourceCode": "https://github.com/NikXpro/sophie-bluel-app",
       "image": "sophie-bluel.png",
       "technologies": ["html", "css", "javascript"],
       "preview": "https://sophie-bluel.nikx.fr"
     },
     {
-      "title": "Nina carducci",
+      "title": "Nina Carducci",
       "color": "#3498DB",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "description": "Nina Carducci est un projet visant à optimiser les performances d'un site web existant. L'objectif est de rendre le site plus rapide et plus réactif pour améliorer l'expérience utilisateur.",
       "sourceCode": "https://github.com/NikXpro/nina-carducci",
       "image": "nina-carducci.png",
-      "technologies": ["performance"],
+      "technologies": ["performance", "figma"],
       "preview": "https://nina-carducci.nikx.fr"
+    },
+    {
+      "title": "Kasa",
+      "color": "#FF6060",
+      "description": "Kasa est une application web de location immobilière qui permet aux utilisateurs de trouver des logements partout en France. Le projet inclut des descriptions détaillées, des photos et des avis clients.",
+      "sourceCode": "https://github.com/NikXpro/kasa-app",
+      "image": "kasa.jpg",
+      "technologies": ["react", "typescript", "sass", "figma"],
+      "preview": "https://kasa.nikx.fr"
+    },
+    {
+      "title": "Portfolio",
+      "color": "#7451eb",
+      "description": "Le projet Portfolio consiste à créer et publier un site web personnel pour présenter vos compétences et projets de développement. Ce site inclut des sections pour afficher vos projets, votre expérience professionnelle et vos compétences techniques, permettant aux employeurs potentiels de découvrir votre travail.",
+      "sourceCode": "https://github.com/NikXpro/portfolio",
+      "image": "portfolio.png",
+      "technologies": ["react", "typescript", "sass", "nodejs", "figma"],
+      "preview": "https://beta.nikx.fr"
     }
   ],
-  "backend": [],
+  "backend": [
+    {
+      "title": "Mon Vieux Grimoire",
+      "color": "#6B8E23",
+      "description": "Mon Vieux Grimoire est un projet de développement du back-end d'un site de notation de livres. Le site permet aux utilisateurs d'ajouter des livres et de les noter en utilisant une API RESTful créée avec Node.js et Express.",
+      "sourceCode": "https://github.com/NikXpro/mon-vieux-grimoire",
+      "image": "mvg.webp",
+      "technologies": ["nodejs", "express", "mongoose"],
+      "preview": "https://mon-vieux-grimoire.nikx.fr"
+    },
+    {
+      "title": "Portfolio Backend",
+      "color": "#7451eb",
+      "description": "Le projet backend pour le Portfolio gère le formulaire de contact de votre site portfolio. Il récupère les données envoyées via le formulaire de contact, limite le nombre de requêtes pour prévenir les abus et envoie les informations de contact par email en utilisant Nodemailer.",
+      "sourceCode": "https://github.com/NikXpro/api_portfolio",
+      "image": "",
+      "technologies": ["nodejs", "express", "nodemailer"],
+      "preview": "https://api-portfolio.nikx.fr"
+    },
+    {
+      "title": "GitHub Stats",
+      "color": "#4078c0",
+      "description": "GitHub Stats est un projet qui interagit avec l'API GitHub et le service CodeTabs pour récupérer et afficher le nombre de lignes de code par langage dans vos dépôts GitHub. Ce projet utilise un serveur Express pour traiter les requêtes et fournir les données nécessaires pour l'affichage des statistiques dans le portfolio.",
+      "sourceCode": "https://github.com/NikXpro/github_stats",
+      "technologies": ["nodejs", "express", "github"],
+      "preview": "https://github-stats.nikx.fr"
+    }
+  ],
   "design": [],
   "modding": [],
   "tools": [],
