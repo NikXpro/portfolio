@@ -47,9 +47,15 @@ const Modal: React.FC<ModalProps> = ({
                     className="project-image"
                     src={`/images/${image}`}
                     alt="Project"
-                    onClick={() => window.open(preview, "_blank")}
+                    style={{
+                      filter: preview ? undefined : "brightness(1)",
+                      cursor: preview ? "pointer" : "default",
+                    }}
+                    onClick={
+                      preview ? () => window.open(preview, "_blank") : undefined
+                    }
                   />
-                  <Icon id="open" />
+                  {preview && <Icon id="open" />}
                 </div>
               )}
               {sourceCode && (
