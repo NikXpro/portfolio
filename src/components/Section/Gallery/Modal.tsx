@@ -10,7 +10,7 @@ interface ModalProps {
   sourceCode: string;
   technologies: string[];
   preview: string;
-  image: string;
+  image?: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -41,15 +41,17 @@ const Modal: React.FC<ModalProps> = ({
               <p className="description">{description}</p>
             </div>
             <div className="right-container">
-              <div className="project-image-container">
-                <img
-                  className="project-image"
-                  src={`/images/${image}`}
-                  alt="Project"
-                  onClick={() => window.open(preview, "_blank")}
-                />
-                <Icon id="open" />
-              </div>
+              {image && (
+                <div className="project-image-container">
+                  <img
+                    className="project-image"
+                    src={`/images/${image}`}
+                    alt="Project"
+                    onClick={() => window.open(preview, "_blank")}
+                  />
+                  <Icon id="open" />
+                </div>
+              )}
               {sourceCode && (
                 <button
                   className="codesource"
