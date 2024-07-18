@@ -20,6 +20,18 @@ export type HeaderProps = {
 };
 
 export const Header = (props: HeaderProps) => {
+  const handleDownload = () => {
+    const filePath = "/CV_NATHAN.pdf";
+
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = "CV_NATHAN.pdf";
+    document.body.appendChild(link);
+
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header>
       <Icon id="logo" />
@@ -39,9 +51,9 @@ export const Header = (props: HeaderProps) => {
             </a>
           ))}
         </div>
-        <a key={"download"} className="download" href="">
+        <div key={"download"} className="download" onClick={handleDownload}>
           <Icon id="download" />
-        </a>
+        </div>
       </div>
     </header>
   );
