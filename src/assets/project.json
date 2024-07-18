@@ -76,6 +76,15 @@
   ],
   "design": [],
   "modding": [],
-  "tools": [],
+  "tools": [
+    {
+      "title": "Server Updater",
+      "color": "#4CAF50",
+      "description": "Server Updater est un script Python conçu pour mettre à jour automatiquement un serveur FiveM à chaque exécution. Il vérifie les mises à jour disponibles, les télécharge et les applique pour garantir que le serveur fonctionne toujours avec la version la plus récente.",
+      "sourceCode": "https://github.com/NikXpro/serverUpdater",
+      "image": "server-updater.png",
+      "technologies": ["python"]
+    }
+  ],
   "modelisations": []
 }
