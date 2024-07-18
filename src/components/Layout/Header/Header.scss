@@ -32,6 +32,7 @@ header {
         font-weight: 500;
         line-height: normal;
         text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
 
         &.active {
           text-decoration: underline;
@@ -46,6 +47,7 @@ header {
 
   .download {
     pointer-events: all;
+    transition: all 0.3s ease-in-out;
 
     .icon.download {
       fill: white;

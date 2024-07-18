@@ -10,6 +10,7 @@
     width: 1.4vw;
     height: auto;
     fill: white;
+    transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.08);
       opacity: 0.7;

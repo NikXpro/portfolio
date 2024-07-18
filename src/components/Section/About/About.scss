@@ -76,6 +76,7 @@
         .icon {
           width: 1.9vw;
           height: 1.9vw;
+          transition: all 0.3s ease-in-out;
         }
 
         .icon:hover {
@@ -116,6 +117,7 @@
           padding-bottom: 100%;
           display: block;
         }
+        transition: all 0.3s ease-in-out;
 
         .icon {
           width: 2.9vw;
