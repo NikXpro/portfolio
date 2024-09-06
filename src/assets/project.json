@@ -72,6 +72,13 @@
       "sourceCode": "https://github.com/NikXpro/github_stats",
       "technologies": ["nodejs", "express", "github"],
       "preview": "https://github-stats.nikx.fr"
+    },
+    {
+      "title": "Bot Migration",
+      "color": "#4078c0",
+      "description": "Bot Migration est un projet qui permet de migrer les rôles d'un serveur Discord à un autre. Ce projet utilise la bibliothèque discord.py pour interagir avec l'API Discord et effectuer la migration des rôles.",
+      "sourceCode": "https://github.com/NikXpro/bot_migration",
+      "technologies": ["python"]
     }
   ],
   "design": [],
