@@ -28,7 +28,7 @@ export const ContactForm: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://node.nikx.fr:7777/contact", {
+      const response = await fetch("https://api.portfolio.nextonlab.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
